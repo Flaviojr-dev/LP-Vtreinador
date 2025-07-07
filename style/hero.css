@@ -1,0 +1,212 @@
+/* HERO DESKTOP */
+.hero {
+    background-image: url('../assets/img/HERO-FIGMA (1).png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.hero-text {
+    max-width: 600px;
+    color: #fff;
+    margin-left: 150px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-text h1 span {
+    color: #254BAA;
+    display: block;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.hero-text .destaque {
+    color: #254BAA;
+}
+
+.cta {
+    background: linear-gradient(90deg, #0F1E44 0%, #254BAA 100%);
+    color: white;
+    padding: 16px 100px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 12px rgba(10, 59, 123, 0.4);
+}
+
+.cta:hover {
+    opacity: 0.9;
+}
+
+.alunos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.alunos img {
+    height: 32px;
+}
+
+
+.alunos span {
+    width: 250px;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Aplica a animação ao .alunos */
+.alunos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+
+/* HERO MOBILE */
+@media (max-width: 768px) {
+    .hero {
+        background-image: url('../assets/img/celular.png');
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-position: top center;
+        padding: 40px 20px;
+        min-height: 120vh;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: 0;
+        margin-top: auto;
+        max-width: 90%;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .hero-text h1 span {
+        display: block;
+        color: #254BAA;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .cta {
+        padding: 14px 100px;
+        font-size: 14px;
+    }
+
+    .alunos {
+        justify-content: center;
+        gap: 8px;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .alunos img {
+        height: 40px;
+    }
+
+    .alunos span {
+        text-align: center;
+        width: auto;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1200px) {
+    .hero {
+        background-image: url('../assets/img/HERO-FIGMA (1).png');
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 60px 20px;
+        color: #fff;
+    }
+
+    .hero-text {
+        max-width: 600px;
+        color: #fff;
+        margin-left: 150px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .cta {
+        padding: 14px 80px;
+        font-size: 15px;
+    }
+
+    .alunos {
+        gap: 10px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .alunos img {
+        height: 36px;
+    }
+
+    .alunos span {
+        text-align: left;
+        font-size: 14px;
+        width: auto;
+    }
+}
