@@ -164,7 +164,7 @@
 /* HERO TABLET */
 @media (min-width: 577px) and (max-width: 1224px) {
     .hero {
-        background-image: url('../assets/img/tablet\ \(2\).png');
+        background-image: url('../assets/img/tablet\ \(3\).png');
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
