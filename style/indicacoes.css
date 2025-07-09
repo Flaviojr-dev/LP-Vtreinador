@@ -1,0 +1,68 @@
+.ideal-programa {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.ideal-programa h2 {
+  font-size: 28px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.ideal-programa h2 span {
+  color: #2F55FF;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #0A0E21;
+  border-radius: 16px;
+  padding: 24px;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+}
+
+.box-number {
+  background-color: #1A2E91;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(26, 46, 145, 0.6);
+  margin-bottom: 20px;
+}
+
+.box h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.box p {
+  font-size: 15px;
+  color: #A0AEC0;
+  line-height: 1.4;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

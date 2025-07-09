@@ -1,0 +1,204 @@
+.depoimentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    color: black;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.text-content h2 span {
+    color: #2a4dd0;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #333;
+    width: 350px;
+}
+
+.text-content p span {
+    color: #2a4dd0;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(to right, #0f1b40, #2a4dd0);
+    color: white;
+    padding: 16px 92px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+.before-after-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.before-after-container img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.after-img {
+    clip-path: inset(0 50% 0 0);
+    transition: clip-path 0.25s ease;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #2a4dd0;
+    cursor: ew-resize;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+.alunos-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;  
+  margin-bottom: 20px;
+}
+
+.alunos-imgs {
+  display: flex;
+  
+}
+
+.alunos-imgs img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;           /* impede seleção */
+  -webkit-user-select: none;   /* Safari */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge antigo */
+  -webkit-user-drag: none;     /* impede arrastar no Chrome/Safari */
+  draggable: false;            /* HTML-level fallback */
+  pointer-events: auto;
+}
+
+
+.alunos-info p {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.alunos-info p span {
+  color: #2a4dd0;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .depoimentos {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .text-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .text-content h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .text-content p {
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cta-button {
+    padding: 14px 40px;
+    font-size: 14px;
+    width: auto;
+  }
+
+  .before-after-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5; /* Mantém proporção visual semelhante */
+  }
+
+  .before-after-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .alunos-info {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .alunos-imgs {
+    justify-content: center;
+  }
+
+  .alunos-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h2 {
+    font-size: 20px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 13px;
+  }
+
+  .alunos-imgs img {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,130 @@
+/* Título principal */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    margin-top: 100px;
+}
+
+.section-title .highlight {
+    color: #2D4DD8;
+}
+
+/* Container dos cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+  body {
+    padding: 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 0 16px;
+    line-height: 1.4;
+  }
+
+  .cards {
+    padding: 0 16px;
+    gap: 60px;
+    width: 330px;
+  }
+
+  .card {
+    padding: 35px 18px 28px;
+    margin-top: 55px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+    top: -32px;
+  }
+
+  .icon img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  .card-text {
+    font-size: 12.8px;
+    line-height: 1.55;
+  }
+}
+
+
+/* Card individual */
+.card {
+    background-color: #0F111C;
+    border-radius: 12px;
+    padding: 40px 25px 30px;
+    flex: 1;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ícone centralizado acima do card */
+.icon {
+    width: 72px;
+    height: 72px;
+    background-color: #2D4DD8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+/* Título do card */
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+/* Texto do card */
+.card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e2e2e2;
+}
