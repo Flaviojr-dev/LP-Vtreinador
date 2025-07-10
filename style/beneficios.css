@@ -31,22 +31,22 @@
 }
 
 @media (max-width: 575px) {
-  body {
-    padding: 0;
-  }
+ 
 
   .section-title {
     font-size: 28px;
-    margin-top: 60px;
-    margin-bottom: 40px;
+  
     padding: 0 16px;
     line-height: 1.4;
+    width: 450px;
+    margin: 0 auto;
   }
 
   .cards {
     padding: 0 16px;
     gap: 60px;
     width: 330px;
+    margin-top: 30px;
   }
 
   .card {

@@ -1,6 +1,5 @@
 .ideal-programa {
   text-align: center;
-  padding: 60px 20px;
 }
 
 .ideal-programa h2 {
@@ -65,4 +64,18 @@
   .cards-grid {
     grid-template-columns: 1fr;
   }
+
+  .ideal-programa h2 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 35px;
+  }
+
+  .cards-grid {
+  margin-top:30px;
+  margin-bottom: 50px;
+}
 }
