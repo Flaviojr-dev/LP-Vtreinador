@@ -33,12 +33,12 @@
 @media (max-width: 575px) {
  
 
-  .section-title {
+  .section-title h2{
     font-size: 28px;
   
     padding: 0 16px;
     line-height: 1.4;
-    width: 450px;
+    width: 200px;
     margin: 0 auto;
   }
 
