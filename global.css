@@ -37,7 +37,7 @@ body {
 
 .marquee-track span {
     font-size: 30px;
-    font-weight:BOLD;
+    font-weight: BOLD;
     color: rgba(0, 0, 0, 0.2);
     /* cinza claro e opaco */
     letter-spacing: 2px;
@@ -52,5 +52,155 @@ body {
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+/* SECTION */
+.plano-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.plano-titulo {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.plano-titulo span {
+    color: #2a4ddb;
+}
+
+/* CARD */
+.card-plano {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #111827;
+    border: 2px solid #2a4ddb;
+    border-radius: 12px;
+    padding: 30px 20px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(42, 77, 219, 0.4);
+}
+
+/* TOPO DO CARD */
+.topo-card {
+    background: linear-gradient(to right, #2a4ddb, #1e3a8a);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.topo-card h3 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.beneficios li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.beneficios li:hover .check-icon {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+.beneficios li span {
+    color: #fff;
+    display: inline-block;
+}
+
+.beneficios strong {
+    color: #fff;
+}
+
+.beneficios span span {
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+/* PREÇO */
+.preco {
+    margin-bottom: 30px;
+}
+
+.pix {
+    color: #2a4ddb;
+    font-size: 28px;
+}
+
+.pix span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.cartao {
+    font-size: 14px;
+    color: white;
+}
+
+.parcelamento {
+    font-size: 12px;
+    color: #999;
+}
+
+/* BOTÃO */
+.botao-plano {
+    display: inline-block;
+    background: #00ffae;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 0 12px #00ffae;
+    transition: all 0.3s ease;
+}
+
+.botao-plano:hover {
+    background: #00d194;
+    box-shadow: 0 0 18px #00ffae;
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+    .card-plano {
+        padding: 25px 15px;
+    }
+
+    .plano-titulo {
+        font-size: 22px;
+    }
+
+    .pix {
+        font-size: 24px;
+    }
+
+    .botao-plano {
+        width: 100%;
+        font-size: 16px;
+        padding: 14px;
     }
 }

@@ -141,6 +141,19 @@
 
     .antesDepois-button {
         padding: 14px 60px;
+        
         font-size: 14px;
+
     }
+    .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .antesDepois-arrows-mobile {
+    margin-bottom: 10px;
+  }
 }
