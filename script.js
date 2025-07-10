@@ -33,3 +33,26 @@ containers.forEach((box) => {
         slider.style.left = `${percent}%`;
     });
 });
+
+let currentSlide = 0;
+
+    function updateCarousel() {
+        const track = document.getElementById('antesDepoisCarouselTrack');
+        const slideWidth = track.clientWidth;
+        track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+
+    function antesDepoisPrevSlide() {
+        const totalSlides = document.querySelectorAll('.antesDepois-carousel-item').length;
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    function antesDepoisNextSlide() {
+        const totalSlides = document.querySelectorAll('.antesDepois-carousel-item').length;
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    // Atualiza ao redimensionar a tela
+    window.addEventListener('resize', updateCarousel);

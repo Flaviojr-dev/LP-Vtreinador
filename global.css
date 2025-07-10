@@ -12,7 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     line-height: 1.6;
-    
+
 }
 
 .container {
@@ -21,3 +21,36 @@ body {
     padding: 20px;
 }
 
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    /* fundo preto */
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.marquee-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+}
+
+.marquee-track span {
+    font-size: 30px;
+    font-weight:BOLD;
+    color: rgba(0, 0, 0, 0.2);
+    /* cinza claro e opaco */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Animação */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
