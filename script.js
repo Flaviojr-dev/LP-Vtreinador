@@ -36,32 +36,32 @@ containers.forEach((box) => {
 
 let currentSlide = 0;
 
-    function updateCarousel() {
-        const track = document.getElementById('antesDepoisCarouselTrack');
-        const slideWidth = track.clientWidth;
-        track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-    }
+function updateCarousel() {
+    const track = document.getElementById('antesDepoisCarouselTrack');
+    const slideWidth = track.clientWidth;
+    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
 
-    function antesDepoisPrevSlide() {
-        const totalSlides = document.querySelectorAll('.antesDepois-carousel-item').length;
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateCarousel();
-    }
+function antesDepoisPrevSlide() {
+    const totalSlides = document.querySelectorAll('.antesDepois-carousel-item').length;
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+}
 
-    function antesDepoisNextSlide() {
-        const totalSlides = document.querySelectorAll('.antesDepois-carousel-item').length;
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateCarousel();
-    }
+function antesDepoisNextSlide() {
+    const totalSlides = document.querySelectorAll('.antesDepois-carousel-item').length;
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+}
 
-    // Atualiza ao redimensionar a tela
-    window.addEventListener('resize', updateCarousel);
+// Atualiza ao redimensionar a tela
+window.addEventListener('resize', updateCarousel);
 
-     let index = 0;
-  const track = document.getElementById('carouselTrack');
-  const items = document.querySelectorAll('.carousel-item');
+let index = 0;
+const track = document.getElementById('carouselTrack');
+const items = document.querySelectorAll('.carousel-item');
 
-  function mudarSlide(direcao) {
+function mudarSlide(direcao) {
     index += direcao;
 
     if (index < 0) index = items.length - 1;
@@ -69,4 +69,13 @@ let currentSlide = 0;
 
     const offset = -index * 100;
     track.style.transform = `translateX(${offset}%)`;
-  }
+}
+
+const perguntas = document.querySelectorAll('.faq-item');
+
+  perguntas.forEach(item => {
+    const btn = item.querySelector('.faq-pergunta');
+    btn.addEventListener('click', () => {
+      item.classList.toggle('ativo');
+    });
+  });
