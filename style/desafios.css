@@ -1,0 +1,141 @@
+:root {
+    --cor-primaria: #254BAA;
+    --cor-secundaria: #0F1E44;
+    --cinza-texto: #333;
+    --cinza-fundo: #fafafa;
+}
+
+.secao-desafio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+    align-items: flex-start;
+    max-width: 1200px;
+}
+
+.bloco-info {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+.bloco-info h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: var(--cor-secundaria);
+}
+
+.titulo-gradiente {
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.bloco-info p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: var(--cinza-texto);
+}
+
+.botao-desafio {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.botao-desafio:hover {
+    opacity: 0.9;
+}
+
+.bloco-cartoes {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cartao-desafio {
+    background: var(--cinza-fundo);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.numero-desafio {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #f0f0f0;
+    z-index: 0;
+}
+
+.cartao-desafio h3 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.cartao-desafio p {
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+    color: var(--cinza-texto);
+}
+
+@media (max-width: 900px) {
+    .secao-desafio {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .bloco-info {
+        max-width: 100%;
+    }
+
+    .bloco-info h2 {
+        font-size: 22px;
+    }
+
+    .botao-desafio {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    .cartao-desafio h3 {
+        font-size: 15px;
+    }
+
+    .cartao-desafio p {
+        font-size: 13px;
+    }
+
+    .numero-desafio {
+        font-size: 30px;
+    }
+}
