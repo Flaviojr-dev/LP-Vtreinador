@@ -97,10 +97,15 @@
 @media (max-width: 768px) {
     .carousel-container {
         display: block;
+        margin-top: 20px;
     }
 
     .relatos-masonry {
         display: none;
+    }
+
+    .relatos-titulo{
+        margin: 0 auto;
     }
 }
 
@@ -109,12 +114,16 @@
         column-count: 1;
     }
 
+    .carousel-container{
+                margin-top: 20px;
+
+    }
+
     .relatos-titulo {
     font-size: 28px;
     color: #000;
     font-weight: bold;
     width: 400px;
     margin-top: 0 auto;
-    margin-bottom: 25px;
 }
 }
