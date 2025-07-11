@@ -117,13 +117,15 @@
     }
 
     .hero-text {
-        margin-left: 0;
-        margin-top: auto;
-        max-width: 90%;
+        
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .hero-text h1 {
-        font-size: 22px;
+        font-size: 28px;
+        width: 350px;
+      
     }
 
     .hero-text h1 span {
