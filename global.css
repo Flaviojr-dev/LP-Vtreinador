@@ -56,149 +56,125 @@ body {
 }
 
 /* SECTION */
-.plano-section {
-    text-align: center;
-    padding: 40px 20px;
+:root {
+    --cor-primaria: #254BAA;
+    --cor-secundaria: #0F1E44;
+    --cor-texto: #ffffff;
+    --cor-fundo: #0B1020;
+    --cor-card: #121A33;
+    --gradiente-botao: linear-gradient(90deg, #254BAA, #0F1E44);
 }
 
-.plano-titulo {
-    font-size: 28px;
-    color: #254BAA;
-    margin-bottom: 30px;
-}
 
-.plano-titulo span {
-    color: black;
-}
 
-/* GRID DE CARDS */
-.plano-grid {
+.secao-planos {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    margin: 0 auto;
+    gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
 }
 
-/* CARD INDIVIDUAL */
-.card-plano {
-    flex: 1 1 300px;
-    max-width: 300px;
-    background: #0B142F;
-    border-radius: 12px;
-    padding: 30px 20px;
+.plano-card {
+    background-color: var(--cor-card);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 32px 24px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     position: relative;
-    box-shadow: 0 0 20px rgba(37, 75, 170, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* TOPO DO CARD */
-.topo-card {
-    background: linear-gradient(to right, #254BAA, #142A65);
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+.plano-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 24px rgba(37, 75, 170, 0.4);
 }
 
-.topo-card h3 {
-    margin: 0;
-    color: white;
-    font-weight: bold;
+.plano-card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #b3c5ff;
 }
 
-/* BENEFÍCIOS */
-.beneficios {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 30px;
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-.beneficios li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.check-icon {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    margin-top: 3px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.beneficios li:hover .check-icon {
-    transform: scale(1.2);
-}
-
-.beneficios li span {
-    color: #fff;
-    display: inline-block;
-}
-
-.beneficios strong {
-    color: #fff;
-}
-
-.beneficios span span {
-    color: #5d8eff;
-    font-weight: bold;
-}
-
-/* PREÇOS */
-.preco {
-    margin-bottom: 30px;
-}
-
-.pix {
-    color: #254BAA;
+.tempo {
     font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: 400;
 }
 
-.pix span {
-    font-size: 14px;
-    color: #ccc;
-}
-
-.cartao {
-    font-size: 14px;
-    color: white;
-}
-
-.parcelamento {
-    font-size: 12px;
-    color: #999;
-}
-
-/* BOTÃO */
-.botao-plano {
-    display: inline-block;
-    background: #254BAA;
-    color: #040A1A;
-    padding: 15px 25px;
-    border-radius: 8px;
-    text-decoration: none;
+.preco {
+    font-size: 26px;
     font-weight: bold;
+    margin-bottom: 14px;
+    color: var(--cor-primaria);
+}
+
+.desconto {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.renovacao {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 24px;
+}
+
+.btn-plano {
+    display: block;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--gradiente-botao);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
     font-size: 14px;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s;
 }
 
-.botao-plano:hover {
-    background: #142A65;
-    box-shadow: 0 0 18px #0B142F;
+.btn-plano:hover {
+    opacity: 0.9;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .card-plano {
-        flex: 1 1 100%;
-        max-width: 100%;
+
+.titulo-planos {
+  text-align: center;
+  width: 100%;
+}
+
+.titulo-planos h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .secao-planos {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .botao-plano {
+    .plano-card {
         width: 100%;
-        font-size: 16px;
-        padding: 14px;
+        max-width: 350px;
     }
 }
