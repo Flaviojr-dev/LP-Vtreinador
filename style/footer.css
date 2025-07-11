@@ -1,0 +1,33 @@
+.rodape {
+    background-color: #000;
+    text-align: center;
+    padding: 30px 15px 20px;
+    font-size: 12px;
+    color: #ffffffcc;
+    line-height: 1.6;
+}
+
+.rodape-topo {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.rodape-baixo {
+    font-size: 13px;
+    color: #fff;
+}
+
+.rodape .dev {
+    font-weight: 400;
+}
+
+.rodape .dev strong {
+    font-weight: 600;
+}
+
+.rodape .cd {
+    font-weight: 700;
+    letter-spacing: 1px;
+}

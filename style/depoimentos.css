@@ -13,7 +13,7 @@
 }
 
 .antesDepois-title span {
-    color: #2a4ddb;
+    color: #254BAA;
 }
 
 .antesDepois-carousel-wrapper {
@@ -51,7 +51,7 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: #2a4ddb;
+    color: #254BAA;
     z-index: 2;
 }
 
@@ -66,7 +66,7 @@
 .antesDepois-button {
     background: linear-gradient(90deg, #0F1E44 0%, #254BAA 100%);
     color: white;
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 20px 100px;
     border: none;
     border-radius: 3px;

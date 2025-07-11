@@ -156,10 +156,7 @@ body {
 .titulo-planos h2 {
   font-size: 28px;
   font-weight: 600;
-  color: var(--cor-primaria);
-  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #254BAA;
   display: inline-block;
   max-width: 500px;
   margin: 0 auto;

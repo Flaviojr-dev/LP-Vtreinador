@@ -25,15 +25,11 @@
     font-size: 24px;
     line-height: 1.4;
     margin-bottom: 15px;
-    color: var(--cor-secundaria);
+    color: #254BAA;
+    width: 370px;
 }
 
-.titulo-gradiente {
-    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
+
 
 .bloco-info p {
     font-size: 15px;
@@ -44,12 +40,12 @@
 
 .botao-desafio {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 12px 97px;
     background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 3px;
     text-decoration: none;
     transition: opacity 0.3s;
 }
