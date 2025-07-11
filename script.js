@@ -56,3 +56,17 @@ let currentSlide = 0;
 
     // Atualiza ao redimensionar a tela
     window.addEventListener('resize', updateCarousel);
+
+     let index = 0;
+  const track = document.getElementById('carouselTrack');
+  const items = document.querySelectorAll('.carousel-item');
+
+  function mudarSlide(direcao) {
+    index += direcao;
+
+    if (index < 0) index = items.length - 1;
+    if (index >= items.length) index = 0;
+
+    const offset = -index * 100;
+    track.style.transform = `translateX(${offset}%)`;
+  }

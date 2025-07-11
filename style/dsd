@@ -1,0 +1,132 @@
+.relatos-section {
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.relatos-titulo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.relatos-titulo span {
+    color: #E72148;
+}
+
+/* Carrossel MOBILE */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    display: none;
+    /* escondido por padrão, aparece no mobile */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Setas */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #E72148;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 0 8px #E72148;
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+/* Grid DESKTOP */
+.relatos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.relatos-grid img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.relatos-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVO: carrossel no mobile */
+@media (max-width: 768px) {
+    .carousel-container {
+        display: block;
+    }
+
+    .relatos-grid {
+        display: none;
+    }
+}
+
+
+<section class="relatos-section">
+        <h2 class="relatos-titulo">
+            Leia os <span>relatos dos meus alunos</span><br> sobre a minha consultoria
+        </h2>
+
+        <!-- Carrossel (somente mobile) -->
+        <div class="carousel-container">
+            <button class="carousel-arrow left" onclick="mudarSlide(-1)">❮</button>
+
+            <div class="carousel-track" id="carouselTrack">
+                <img src="assets/img/relato1.png" alt="Relato 1" class="carousel-item">
+                <img src="assets/img/relato2.png" alt="Relato 2" class="carousel-item">
+                <img src="assets/img/relato3.png" alt="Relato 3" class="carousel-item">
+            </div>
+
+            <button class="carousel-arrow right" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+        <!-- Grid tradicional (PC/tablet) -->
+        <div class="relatos-grid">
+            <img src="assets/img/relato2.PNG" alt="Relato 1">
+            <img src="assets/img/relato2.png" alt="Relato 2">
+            <img src="assets/img/relato2.png" alt="Relato 3">
+            <img src="assets/img/relato2.png" alt="Relato 4">
+            <img src="assets/img/relato2.png" alt="Relato 5">
+            <img src="assets/img/relato2.png" alt="Relato 6">
+            <img src="assets/img/relato2.PNG" alt="Relato 1">
+            <img src="assets/img/relato2.png" alt="Relato 2">
+            <img src="assets/img/relato2.png" alt="Relato 3">
+            <img src="assets/img/relato2.png" alt="Relato 4">
+            <img src="assets/img/relato2.png" alt="Relato 5">
+            <img src="assets/img/relato2.png" alt="Relato 6">
+        </div>
+    </section>

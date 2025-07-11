@@ -63,29 +63,37 @@ body {
 
 .plano-titulo {
     font-size: 28px;
-    color: white;
+    color: #254BAA;
     margin-bottom: 30px;
 }
 
 .plano-titulo span {
-    color: #2a4ddb;
+    color: black;
 }
 
-/* CARD */
+/* GRID DE CARDS */
+.plano-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD INDIVIDUAL */
 .card-plano {
-    max-width: 400px;
-    margin: 0 auto;
-    background: #111827;
-    border: 2px solid #2a4ddb;
+    flex: 1 1 300px;
+    max-width: 300px;
+    background: #0B142F;
+    border: 2px solid #254BAA;
     border-radius: 12px;
     padding: 30px 20px;
     position: relative;
-    box-shadow: 0 0 20px rgba(42, 77, 219, 0.4);
+    box-shadow: 0 0 20px rgba(37, 75, 170, 0.3);
 }
 
 /* TOPO DO CARD */
 .topo-card {
-    background: linear-gradient(to right, #2a4ddb, #1e3a8a);
+    background: linear-gradient(to right, #254BAA, #142A65);
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -123,7 +131,6 @@ body {
 
 .beneficios li:hover .check-icon {
     transform: scale(1.2);
-    filter: brightness(1.5);
 }
 
 .beneficios li span {
@@ -136,23 +143,23 @@ body {
 }
 
 .beneficios span span {
-    color: #60a5fa;
+    color: #5d8eff;
     font-weight: bold;
 }
 
-/* PREÇO */
+/* PREÇOS */
 .preco {
     margin-bottom: 30px;
 }
 
 .pix {
-    color: #2a4ddb;
+    color: #254BAA;
     font-size: 28px;
 }
 
 .pix span {
     font-size: 14px;
-    color: #aaa;
+    color: #ccc;
 }
 
 .cartao {
@@ -168,34 +175,26 @@ body {
 /* BOTÃO */
 .botao-plano {
     display: inline-block;
-    background: #00ffae;
-    color: black;
+    background: #254BAA;
+    color: #040A1A;
     padding: 15px 25px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-    box-shadow: 0 0 12px #00ffae;
     transition: all 0.3s ease;
 }
 
 .botao-plano:hover {
-    background: #00d194;
-    box-shadow: 0 0 18px #00ffae;
+    background: #142A65;
+    box-shadow: 0 0 18px #0B142F;
 }
 
 /* RESPONSIVO */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .card-plano {
-        padding: 25px 15px;
-    }
-
-    .plano-titulo {
-        font-size: 22px;
-    }
-
-    .pix {
-        font-size: 24px;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .botao-plano {
