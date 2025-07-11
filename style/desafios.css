@@ -113,6 +113,9 @@
 
     .bloco-info h2 {
         font-size: 28px;
+        width: 300px;
+        margin: 0 auto;
+        
     }
 
     .botao-desafio {
@@ -123,6 +126,14 @@
 }
 
 @media (max-width: 500px) {
+
+     .bloco-info h2 {
+        font-size: 28px;
+        width: 300px;
+        margin: 0 auto;
+        
+    }
+
     .secao-desafio {
         padding: 30px 15px;
     }
