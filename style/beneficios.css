@@ -6,6 +6,8 @@
     color: #000000;
     margin-bottom: 15px;
     line-height: 1.4;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .section-title .highlight {
