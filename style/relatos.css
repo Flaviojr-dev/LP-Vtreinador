@@ -18,6 +18,81 @@
     color: #254BAA;
 }
 
+.carrossel-resultados {
+    position: relative;
+    padding: 40px 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel-faixa {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.carrossel-faixa img {
+    width: 200px;
+    height: 320px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.carrossel-faixa img:hover {
+    transform: scale(1.04);
+}
+
+.carrossel-seta {
+    background-color: #254BAA;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.carrossel-seta:hover {
+    background-color: #0F1E44;
+}
+
+.carrossel-seta.esquerda {
+    margin-right: 10px;
+}
+
+.carrossel-seta.direita {
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .carrossel-resultados {
+        padding: 20px 10px;
+    }
+
+    .carrossel-faixa img {
+        width: 120px;
+        height: 190px;
+    }
+
+    .carrossel-seta {
+        width: 60px;
+        height: 28px;
+        font-size: 14px;
+    }
+}
+
 /* Carrossel MOBILE */
 .carousel-container {
     position: relative;
@@ -106,7 +181,7 @@
         display: none;
     }
 
-    .relatos-titulo{
+    .relatos-titulo {
         margin: 0 auto;
         width: 400px;
     }
@@ -117,16 +192,16 @@
         column-count: 1;
     }
 
-    .carousel-container{
-                margin-top: 20px;
+    .carousel-container {
+        margin-top: 20px;
 
     }
 
     .relatos-titulo {
-    font-size: 28px;
-    color: #000;
-    font-weight: bold;
-    margin: 0 auto;
-    width: 350px;
-}
+        font-size: 28px;
+        color: #000;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 350px;
+    }
 }

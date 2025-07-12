@@ -92,3 +92,12 @@ function mostrarPlanos(tipo) {
     if (tipo === 'online') botoes[0].classList.add('active');
     else botoes[1].classList.add('active');
 }
+
+  let scrollPos = 0;
+
+  function rolarCarrossel(direcao) {
+    const faixa = document.getElementById('faixaCarrossel');
+    const larguraItem = faixa.querySelector('img').offsetWidth + 20; // img + gap
+    scrollPos += direcao * larguraItem;
+    faixa.scrollTo({ left: scrollPos, behavior: 'smooth' });
+  }
