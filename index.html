@@ -201,39 +201,89 @@
     </section>
 
 
-    <section class="secao-planos">
-
-        <div class="titulo-planos">
-            <h2>Escolha o plano ideal para alcançar seus objetivos</h2>
-        </div>
-        <div class="plano-card">
-            <h3>Plano Trimestral</h3>
-            <p class="tempo">3 meses</p>
-            <p class="preco">R$700,00</p>
-            <span class="desconto roxo">6% OFF</span>
-            <p class="renovacao">Renovação a cada 3 meses.</p>
-            <a href="#" class="btn-plano">QUERO ESSE</a>
+    <section class="planos-section">
+        <h2 class="planos-titulo">Escolha o plano ideal para você</h2>
+        <div class="planos-toggle-buttons">
+            <button class="active" onclick="mostrarPlanos('online')">Consultoria Hora de Evoluir</button>
+            <button onclick="mostrarPlanos('presencial')">Consultoria Guerreiros de Elite</button>
         </div>
 
-        <div class="plano-card destaque">
-            <h3>Plano Semestral</h3>
-            <p class="tempo">6 meses</p>
-            <p class="preco">R$1350,00</p>
-            <span class="desconto roxo">10% OFF</span>
-            <p class="renovacao">Renovação a cada 6 meses.</p>
-            <a href="#" class="btn-plano">QUERO ESSE</a>
+        <div id="planos-online" class="planos-container">
+            <!-- Card 1 -->
+            <div class="plano-card">
+                <h3 class="plano-nome">Hora de Evoluir</h3>
+                <div class="plano-duracao">3 meses</div>
+                <div class="plano-preco">R$ 150,00</div>
+                <ul class="plano-beneficios">
+                    <li>Avaliação postural e funcional</li>
+                    <li>Treinos personalizados via App</li>
+                    <li>Suporte via whatsapp 24 horas</li>
+                    <li>Correção de movimentos via vídeo</li>
+                    <li>1 treino + suporte de 45 dias</li>
+                    <li>Atualizações posturais via imagem a cada 45 dias</li>
+                </ul>
+                <button class="plano-botao">Quero este plano</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="plano-card">
+                <h3 class="plano-nome">Hora de Evoluir</h3>
+                <div class="plano-duracao">6 meses</div>
+                <div class="plano-preco">R$ 300,00</div>
+                <ul class="plano-beneficios">
+                    <li>Avaliação postural e funcional</li>
+                    <li>Treinos personalizados via App</li>
+                    <li>Suporte via whatsapp 24 horas</li>
+                    <li>Correção de movimentos via vídeo</li>
+                    <li>treino + retorno e suporte de 90 dias</li>
+                    <li>Atualizações posturais via imagem a cada 45 dias</li>
+                </ul>
+                <button class="plano-botao">Quero este plano</button>
+            </div>
+
+            <div class="plano-card">
+                <h3 class="plano-nome">Hora de Evoluir</h3>
+                <div class="plano-duracao">1 ano</div>
+                <div class="plano-preco">R$ 300,00</div>
+                <ul class="plano-beneficios">
+                    <li>Avaliação postural e funcional</li>
+                    <li>Treinos personalizados via App</li>
+                    <li>Suporte via whatsapp 24 horas</li>
+                    <li>Correção de movimentos via vídeo</li>
+                    <li>treino + retorno e suporte de 90 dias</li>
+                    <li>Atualizações posturais via imagem a cada 45 dias</li>
+                </ul>
+                <button class="plano-botao">Quero este plano</button>
+            </div>
         </div>
 
-        <div class="plano-card">
-            <h3>Plano Anual</h3>
-            <p class="tempo">12 meses</p>
-            <p class="preco">R$2500,00</p>
-            <span class="desconto roxo">17% OFF</span>
-            <p class="renovacao">Renovação a cada 12 meses.</p>
-            <a href="#" class="btn-plano">QUERO ESSE</a>
+        <div id="planos-presencial" class="planos-container" style="display: none;">
+            <!-- Coloque aqui os cards da consultoria presencial -->
+            <div class="plano-card">
+                <h3 class="plano-nome">Guerreiros de Elite</h3>
+                <div class="plano-duracao">Semestral</div>
+                <div class="plano-preco">R$ 1550,00</div>
+                <ul class="plano-beneficios">
+                    <li>Atendimento presencial</li>
+                    <li>Avaliação física</li>
+                    <li>Treino individualizado</li>
+                </ul>
+                <button class="plano-botao">Quero este plano</button>
+            </div>
+
+            <div class="plano-card">
+                <h3 class="plano-nome">Guerreiros de Elite</h3>
+                <div class="plano-duracao">Anual</div>
+                <div class="plano-preco">R$ 2750,00</div>
+                <ul class="plano-beneficios">
+                    <li>Atendimento presencial completo</li>
+                    <li>Revisões mensais</li>
+                    <li>Consultoria com nutricionista</li>
+                </ul>
+                <button class="plano-botao">Quero este plano</button>
+            </div>
         </div>
     </section>
-
 
     <section class="sobre">
         <div class="sobre-text">
@@ -298,7 +348,10 @@
         </div>
     </footer>
 
+
+
     <script src="script.js"></script>
 </body>
+
 
 </html>

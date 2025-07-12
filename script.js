@@ -73,9 +73,22 @@ function mudarSlide(direcao) {
 
 const perguntas = document.querySelectorAll('.faq-item');
 
-  perguntas.forEach(item => {
+perguntas.forEach(item => {
     const btn = item.querySelector('.faq-pergunta');
     btn.addEventListener('click', () => {
-      item.classList.toggle('ativo');
+        item.classList.toggle('ativo');
     });
-  });
+});
+
+
+
+
+function mostrarPlanos(tipo) {
+    document.getElementById('planos-online').style.display = tipo === 'online' ? 'flex' : 'none';
+    document.getElementById('planos-presencial').style.display = tipo === 'presencial' ? 'flex' : 'none';
+
+    const botoes = document.querySelectorAll('.planos-toggle-buttons button');
+    botoes.forEach(btn => btn.classList.remove('active'));
+    if (tipo === 'online') botoes[0].classList.add('active');
+    else botoes[1].classList.add('active');
+}
