@@ -109,6 +109,11 @@
     text-align: center;
   }
 
+  .faq-resposta{
+    text-align: left;
+  }
+
+
   .faq-coluna-esquerda p {
     max-width: 100%;
   }
